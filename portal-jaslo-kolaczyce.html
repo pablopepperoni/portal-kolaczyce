@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -360,28 +361,7 @@
   .info-box ul li:last-child { border-bottom: none; }
   .info-box ul li::before { content: '▸'; color: var(--accent); flex-shrink: 0; }
 
-  /* APRIL BADGE */
-  .april-ribbon {
-    position: fixed;
-    bottom: 24px;
-    right: 24px;
-    background: var(--accent);
-    color: white;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 10px 16px;
-    border-radius: 2px;
-    box-shadow: 0 4px 20px rgba(139,26,26,0.45);
-    cursor: pointer;
-    z-index: 999;
-    text-align: center;
-    line-height: 1.5;
-    transition: transform 0.2s;
-  }
-  .april-ribbon:hover { transform: scale(1.05); }
+
 
   /* FOOTER */
   footer { border-top: 3px double var(--rule-dark); padding: 20px 32px; font-family: 'DM Sans', sans-serif; font-size: 11px; color: var(--ink-muted); background: var(--paper-warm); }
@@ -446,9 +426,9 @@
     <!-- PHOTO with fallback -->
     <div class="article-photo" id="photoWrap">
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Oil_well_pumping.jpg/1200px-Oil_well_pumping.jpg"
-        alt="Sprzęt do badań sejsmicznych"
-        onerror="document.getElementById('photoWrap').innerHTML='<div class=\'photo-fallback\'><div class=\'photo-fallback-icon\'>⛏️</div><div class=\'photo-fallback-text\'>Fot. archiwum redakcji</div></div>'"
+        src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=900&q=80&auto=format&fit=crop"
+        alt="Prace wiertnicze i badania geologiczne w terenie"
+        onerror="this.onerror=null;this.src='https://picsum.photos/seed/drilling/900/340';"
       >
     </div>
     <p class="photo-caption">
@@ -568,9 +548,7 @@
   </div>
 </footer>
 
-<div class="april-ribbon" onclick="this.remove()" title="Kliknij aby ukryć">
-  🎭 PRIMA APRILIS<br><span style="font-size:9px;letter-spacing:0.05em;font-weight:400">Kliknij, aby ukryć</span>
-</div>
+
 
 </body>
 </html>
